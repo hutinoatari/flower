@@ -10,7 +10,7 @@ const marko = {
         if(!this.beginWords.includes(wordArr[0])) this.beginWords.push(wordArr[0]);
         for(let i=0; i<wordLength; i++){
             if(wordArr[i] === this.period) continue;
-            if(!this.words.hasOwnProperty(wordArr[i])) this.word[wordArr[i]] = [];
+            if(!this.words.hasOwnProperty(wordArr[i])) this.words[wordArr[i]] = [];
             this.words[wordArr[i]].push(wordArr[i+1]);
         }
     },
